@@ -4,7 +4,7 @@ import pandas as pd
 
 def load_data():
     fields = ['date_time', 'AES', 'TEC', 'VDE', 'TES', 'GES', 'GAES_GEN', 'CONSUMPTION']
-    data = pd.read_csv('lab2/data_lab2.csv').loc[:, fields]
+    data = pd.read_csv('./data_lab2.csv').loc[:, fields]
     return _divide_date_time(data)
 
 
